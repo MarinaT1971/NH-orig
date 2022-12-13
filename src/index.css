@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+	font-family: 'Futura PT Book';
+	src: url('./fonts/futura_pt_book.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/futura_pt_book.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/futura_pt_book.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/futura_pt_book.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/futura_pt_book.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/futura_pt_book.svg#futura_pt_book') format('svg'); /* Chrome < 4, Legacy iOS */
+} 
+@font-face {
+	font-family: 'Futura PT Medium';
+	src: url('./fonts/futura_pt_medium.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/futura_pt_medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/futura_pt_medium.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/futura_pt_medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/futura_pt_medium.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/futura_pt_medium.svg#futura_pt_medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+body{ 
+ font-family: 'Futura PT Book'; 
+} 
+h1{
+	font-family: 'Futura PT Medium';
+}
+
+
