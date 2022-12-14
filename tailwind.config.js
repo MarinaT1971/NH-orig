@@ -19,6 +19,10 @@ module.exports = {
         lineHeight: '3.825rem',
         // fontFamily:'Futura PT Medium',
       }],
+      'h1-sm': ['3rem', {  //48px
+        lineHeight: '2.7rem', //90%
+        // fontFamily:'Futura PT Medium',
+      }],
       'h2': ['3.5rem', {  //56px
         lineHeight: '3.5rem',
         // fontFamily:'Futura PT Medium',
@@ -37,6 +41,10 @@ module.exports = {
       }],
       'p2-R': ['1.25rem', {   //20px
         lineHeight: '1.5rem',
+        // fontFamily:'Futura PT Book',
+      }],
+      'p2-R-sm': ['1.125rem', {   //18px
+        lineHeight: '1.35rem',   //120%
         // fontFamily:'Futura PT Book',
       }],
       'p3-R': ['1rem', {   //16px
