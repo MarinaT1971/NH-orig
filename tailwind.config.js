@@ -69,7 +69,7 @@ module.exports = {
         lineHeight: '1.3rem', //130%
       }],
       'p4-R': ['0.875rem', {   //14px
-        lineHeight: '1.05rem',
+        lineHeight: '1.05rem',  //120%
       }],
     }
   },
