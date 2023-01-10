@@ -26,6 +26,10 @@ plugins: [
     new HtmlWebpackPlugin({
         template:path.resolve(__dirname, 'src', 'index.html'),
     }),
+    new HtmlWebpackPlugin({
+      filename: 'index_list.html',
+      template:path.resolve(__dirname, 'src', 'index_list.html'),
+  }),
     new MiniCssExtractPlugin ({
         filename: '[name].[contenthash].css',
     }),
