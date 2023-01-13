@@ -18,7 +18,21 @@ import Swiper, { Navigation, Pagination } from 'swiper';
         prevEl: '.swiper-button-prev',
       }, 
     slidesPerView:1.4,
-    spaceBetween:32,
+    // spaceBetween:32,
+    breakpoints: {
+        320: {
+          spaceBetween: 20,
+          slidesPerView:1.2,
+        },
+        640: {
+          spaceBetween: 24,
+          slidesPerView:1.3,
+        },
+        768: {
+          spaceBetween: 32,
+          slidesPerView:1.4,
+        }
+      },
     initialSlide:1,
     centeredSlides:true,
     //   scrollbar: {

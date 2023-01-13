@@ -7,7 +7,7 @@
     <title>Карточка товара</title>
 </head>
 <body>
-    <header class="bg-[url('./img/menu_page_sm.png')] md:bg-[url('./img/menu_page.png')] bg-center bg-cover text-white">
+    <header class="h-[500px] md:h-full bg-[url('./img/menu_page_sm.png')] md:bg-[url('./img/menu_page.png')] bg-center bg-cover text-white">
         <div class="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[4.5rem] 2xl:px-24 pt-4">   <!--container px-4 xl:px-8-->
         <div class="grid grid-cols-12 xl:border-b-[1px] border-lines pb-2.5 sm:pb-4">
                 <div class="col-span-6 xl:col-span-2">
@@ -47,14 +47,15 @@
                 </ul>    
                 </div>
         </div>
-            <ul class="flex mt-6 gap-1 text-p4-R">
+            <ul class="flex mt-1.5 sm:mt-6 gap-1 text-p4-R">
                 <li>Главная /</li>
                  <li>Все товары /</li>
                 <li>Сон и комфорт</li>
+                <li class="md:hidden">/ Somnium 7.0</li>
             </ul>
-            <div class="grid grid-cols-12 mt-3.5">
-                <div class="col-span-6"></div>
-                <div class="invisible md:visible sm:col-span-8 md:col-span-5 px-6 py-4 sm:py-10 sm:pl-10 sm:pr-0 rounded-t-xl bg-white -mb-1"> 
+            <div class="hidden md:grid grid-cols-12 mt-3.5">
+                <div class="md:col-span-5 lg:col-span-6"></div>
+                <div class="md:col-span-6 lg:col-span-5 px-6 py-4 sm:py-10 sm:pl-10 sm:pr-0 rounded-t-xl bg-white -mb-1"> 
                   <div class="flex justify-between items-center">
                     <div class="flex gap-2">
                         <div class="bg-green-bg p-1.5 rounded-full"><img src="./img/heart_white.svg"></div>
@@ -76,52 +77,52 @@
                 </div>
             </div> 
         </div>
-        <div class=" md:hidden px-6 py-4 sm:py-10 sm:pl-10 sm:pr-0 rounded-t-xl bg-white -mb-1"> 
-            <div class="flex justify-between items-center">
-              <div class="flex gap-2">
-                  <div class="bg-green-bg p-1.5 rounded-full"><img src="./img/heart_white.svg"></div>
-                  <div class="text-title text-p3-R">Сон и комфорт</div>
-              </div>
-              <div class="bg-green-bg rounded-tl-xl rounded-bl-xl pl-4 pr-[27px] py-2 text-white text-p4-M font-[Futura PT Medium]">Бесплатная доставка</div>
-            </div> 
-            <div class="pr-8">
-              <h4 class="text-h4 text-title mt-2.5 mb-3">Somnium 7.0</h4>
-              <div class="text-p2-R text-title">Анатомическая подушка — идеальное сочетание материала с эффектом «памяти»</div>
-              <ul class="text-blue text-p3-R mt-[25px] mb-[52px]">
-                  <li class="flex items-start gap-[11px] pb-[13px]"><img src="./img/Icon_list.svg" class="pt-1">Пена с «памятью формы» подстроится под формы и особенности каждого</li>
-                  <li class="flex items-start gap-[11px] pb-[13px]"><img src="./img/Icon_list.svg" class="pt-1">Улучшение движения крови в шейном отделе позвоночного столба</li>
-                  <li class="flex items-start gap-[11px]"><img src="./img/Icon_list.svg" class="pt-1">Мягкое и равномерное распределение давление тела</li>
-              </ul>
-              <button class="w-full flex items-center justify-center sm:flex-row gap-3 py-4 border border-green-bg rounded-lg font-['Futura_PT_Medium'] text-green-bg"><img src="./img/Icon_green.svg">Купить за 3 990 ₽</button>
-            </div> 
-          </div>
      </header> 
+     <div class="-mt-4 md:hidden pl-4 pt-6 pb-8 sm:py-10 sm:pl-10 sm:pr-0 rounded-t-xl bg-white -mb-1"> 
+        <div class="flex justify-between items-center">
+          <div class="flex gap-2">
+              <div class="bg-green-bg p-1.5 rounded-full"><img src="./img/heart_white.svg"></div>
+              <div class="text-title text-p4-R sm:text-p3-R">Сон и комфорт</div>
+          </div>
+          <div class="bg-green-bg rounded-tl-xl rounded-bl-xl pl-4 pr-[27px] py-2 text-white text-p4-M-sm sm:text-p4-M font-[Futura PT Medium]">Бесплатная доставка</div>
+        </div> 
+        <div class="pr-4">
+          <h4 class="text-h4 text-title mt-4 sm:mt-2.5 mb-2 sm:mb-3">Somnium 7.0</h4>
+          <div class="text-p2-R-sm sm:text-p2-R text-title">Анатомическая подушка — идеальное сочетание материала с эффектом «памяти»</div>
+          <ul class="text-blue text-p4-R sm:text-p3-R mt-4 sm:mt-[25px] mb-6 sm:mb-[52px]">
+              <li class="flex items-start gap-[11px] pb-3"><img src="./img/Icon_list.svg" class="pt-1">Пена с «памятью формы» подстроится под формы и особенности каждого</li>
+              <li class="flex items-start gap-[11px] pb-3"><img src="./img/Icon_list.svg" class="pt-1">Улучшение движения крови в шейном отделе позвоночного столба</li>
+              <li class="flex items-start gap-[11px]"><img src="./img/Icon_list.svg" class="pt-1">Мягкое и равномерное распределение давление тела</li>
+          </ul>
+          <button class="w-full flex items-center justify-center sm:flex-row gap-3 py-4 border border-green-bg rounded-lg font-['Futura_PT_Medium'] text-green-bg text-p3-M"><img src="./img/Icon_green.svg">Купить за 3 990 ₽</button>
+        </div> 
+      </div>
     <main>
-        <section class="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[4.5rem] 2xl:px-24 pt-4 mt-14">
-            <h2 class="text-h2-sm md:text-h2 text-title">Состав</h2>
-            <div class="grid grid-cols-12 justify-items-center gap-8 mt-8 flex-wrap">
-                <div class="col-span-5 sm:col-span-3">
-                    <img src="./img/Ellipse_7.png" class="min-w-[152px] min-h-[152px] mb-6">
+        <section class="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[4.5rem] 2xl:px-24 pt-4 mt-6 sm:mt-14">
+            <h2 class="text-h2-sm lg:text-h2 text-title">Состав</h2>
+            <div class="grid grid-cols-12 justify-items-center gap-6 md:gap-8 mt-6 md:mt-8 flex-wrap">
+                <div class="col-span-6 md:col-span-3">
+                    <img src="./img/Ellipse_7.png" class="min-w-[152px] min-h-[152px] mb-3 md:mb-6">
                     <div class="text-p3-R md:text-p2-R text-blue text-center">Внешняя наволочка — 80% хлопок, 18% полиэстер, 2% эластан</div>
                 </div>
-                <div class="col-span-5 sm:col-span-3">
-                    <img src="./img/Ellipse_8.png" class="min-w-[152px] min-h-[152px] mb-6">
+                <div class="col-span-6 md:col-span-3">
+                    <img src="./img/Ellipse_8.png" class="min-w-[152px] min-h-[152px] mb-3 md:mb-6">
                     <div class="text-p3-R md:text-p2-R text-blue text-center">Внутренняя наволочка — 95% хлопок/5% эластан</div>
                 </div>
-                <div class="col-span-12 sm:col-span-6">
-                    <img src="./img/Ellipse_9.png" class="min-w-[304px] min-h-[152px] mb-6">
-                    <div class="text-p3-R md:text-p2-R text-blue text-center">Эко­логически чистый высокотехнологичный элас­тичный пенополиуретан</div>
+                <div class="col-span-12 md:col-span-6">
+                    <img src="./img/Ellipse_9.png" class="min-w-[304px] min-h-[152px] mb-3 md:mb-6">
+                    <div class="text-p3-R md:text-p2-R text-blue text-center">Эко­логически чистый высокотехнологичный эластичный пенополиуретан</div>
                 </div>
             </div>
          </section>
-         <section class="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[4.5rem] 2xl:px-24 my-[120px]">
+         <section class="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[4.5rem] 2xl:px-24 my-14 md:my-[120px]">
             <div class="grid grid-cols-12">
-                <div class="col-span-6">
-                    <h2 class="w-[50%] text-h2 text-title">Основная информация</h2>
+                <div class="col-span-12 md:col-span-5 lg:col-span-6">
+                    <h2 class="text-h2-sm md:w-[60%] lg:text-h2 text-title">Основная информация</h2>
                 </div>
-                <div class="col-span-6">
-                    <h4 class="text-h4 text-title mb-4">Профилактическое действие</h4>
-                    <ul class="text-p2-R text-blue pb-6 border-b border-lines">
+                <div class="col-span-12 md:col-span-7 lg:col-span-6">
+                    <h4 class="text-p1-M md:text-h4 text-title pt-6 md:pt-3 lg:pt-5 mb-4">Профилактическое действие</h4>
+                    <ul class="text-p3-R md:text-p2-R text-blue pb-6 border-b border-lines">
                         <li class="mb-3">Головные боли, головокружения, повышенная утомляемость</li>
                         <li class="mb-3">Нарушения мозгового кровообращения</li>
                         <li class="mb-3">Боли в шейном отделе позвоночника</li>
@@ -131,68 +132,70 @@
                         <li class="mb-3">Сколиоз, хронический радикулит</li>
                         <li>Реабилитация после травм шейного отдела позвоночника</li>
                     </ul>
-                    <h4 class="text-h4 text-title mt-6 mb-4">Способ применения</h4>
-                    <div class="text-p2-R text-blue pb-6 border-b border-lines">Использовать во время отдыха и сна под голову и шейный отдел позвоночника</div>
-                    <h4 class="text-h4 text-title mt-6 mb-4">Противопоказания</h4>
-                    <div class="text-p2-R text-blue pb-6 border-b border-lines">Индивидуальная непереносимость компонентов</div>
-                    <h4 class="text-h4 text-title mt-6 mb-4">Не вызывает привыкания</h4>
-                    <div class="text-p2-R text-blue">Не является лекарственным средством</div>
+                    <h4 class="text-p1-M md:text-h4 text-title mt-4 md:mt-6 mb-4">Способ применения</h4>
+                    <div class="text-p3-R md:text-p2-R text-blue pb-6 border-b border-lines">Использовать во время отдыха и сна под голову и шейный отдел позвоночника</div>
+                    <h4 class="text-p1-M md:text-h4 text-title mt-4 md:mt-6 mb-4">Противопоказания</h4>
+                    <div class="text-p3-R md:text-p2-R text-blue pb-6 border-b border-lines">Индивидуальная непереносимость компонентов</div>
+                    <h4 class="text-p1-M md:text-h4 text-title mt-4 md:mt-6 mb-4">Не вызывает привыкания</h4>
+                    <div class="text-p3-R md:text-p2-R text-blue">Не является лекарственным средством</div>
                 </div>
             </div>
          </section>
          <section>  <!--Должно быть видео-->
-            <div class="swiper">
+            <div class="swiper w-full h-full">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="./img/video_1.png" class="rounded-3xl"></div>
-                  <div class="swiper-slide"><img src="./img/video_1.png" class="rounded-3xl"></div>
-                  <div class="swiper-slide"><img src="./img/video_1.png" class="rounded-3xl"></div>
+                  <div class="swiper-slide"><img src="./img/video_1.png" class="rounded-3xl min-h-[200px]"></div>
+                  <div class="swiper-slide"><img src="./img/video_1.png" class="rounded-3xl min-h-[200px]"></div>
+                  <div class="swiper-slide"><img src="./img/video_1.png" class="rounded-3xl min-h-[200px]"></div>
                 </div>
-                <div class="swiper-button-prev"><img src="./img/arrow-left.svg" class="p-2 bg-white rounded-full"></div>
-                <div class="swiper-button-next"><img src="./img/arrow-right.svg" class="p-2 bg-white rounded-full"></div>
+                <div class="swiper-button-prev"><img src="./img/arrow-left.svg" class="hidden md:flex p-2 bg-white rounded-full"></div>
+                <div class="swiper-button-next"><img src="./img/arrow-right.svg" class="hidden md:flex p-2 bg-white rounded-full"></div>
               </div>
          </section>
-         <section class="bg-title py-[120px] my-[120px]">
-            <div class="px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[4.5rem] 2xl:px-24">
-                <div class="flex justify-between items-center mb-9">
+         <section class="bg-title py-14 md:py-[120px] my-14 md:my-[120px]">
+            <div class="pl-4 sm:px-8 md:px-12 lg:px-16 xl:px-[4.5rem] 2xl:px-24">
+                <div class="flex justify-between items-center mb-6 md:mb-9">
                     <div class="flex gap-8 items-end">
-                        <h2 class="text-h2 text-white">Отзывы</h2>
+                        <h2 class="text-h2-sm lg:text-h2 text-white">Отзывы</h2>
                         <div class="text-p3-R underline text-gray">Оставить отзыв</div>
                     </div>
-                    <div class="flex gap-4">
+                    <div class="hidden md:flex gap-4">
                         <img src="./img/arrow-left.svg" class="p-2 bg-white rounded-full">
                         <img src="./img/arrow-right.svg" class="p-2 bg-white rounded-full">
                     </div>
                 </div>
-                <div class="grid grid-cols-12 gap-8">
-                    <div class="col-span-6 bg-white p-10 rounded-3xl h-min">
-                        <div class="flex justify-between">
-                            <h4 class="text-h4 text-title">Ольга</h4>
-                            <button class="flex items-center gap-3 px-2.5 xl:px-4 py-[9px] border border-green-bg rounded-lg text-green-bg"><img src="./img/Vector (Stroke).svg"><span class="hidden md:flex">Полезно</span></button>
+                <div class="grid grid-cols-12 gap-6 md:gap-8 grid-flow-col overflow-y-hidden">
+                    <div class="col-span-12 sm:col-span-6 bg-white p-6 md:p-10 rounded-3xl h-min">
+                        <div class="flex justify-between items-end">
+                            <h4 class="text-p1-M-sm md:text-h4 text-title">Константин Констанипольский</h4>
+                            <button class="hidden xl:flex items-center gap-3 px-2.5 xl:px-4 py-[9px] border border-green-bg rounded-lg text-green-bg"><img src="./img/Vector (Stroke).svg">Полезно</button>
                         </div>
-                        <div class="text-p3-R text-blue">Фото до/после. За 1,5 месяца избавилась от псориаза и оздоровила кожу. Принимала следующую программу энергоинформационных продуктов: Антипаразит, Ливер, Селен, Имуно 2, Реген, Аурум.</div>
+                        <div class="text-p3-R text-blue mt-3 md:mt-4 mb-4 md:mb-6">Фото до/после. За 1,5 месяца избавилась от псориаза и оздоровила кожу. Принимала следующую программу энергоинформационных продуктов: Антипаразит, Ливер, Селен, Имуно 2, Реген, Аурум.</div>
                         <div class="grid grid-cols-6 gap-4">
-                            <div class="col-span-1"><img src="./img/before.png" class="rounded-lg"></div>
-                            <div class="col-span-1"><img src="./img/after.png" class="rounded-lg"></div>
-                            <div class="col-span-3"><img src="./img/text_foto.png" class="rounded-lg"></div>
+                            <div class="col-span-3 md:col-span-1"><img src="./img/before.png" class="rounded-lg"></div>
+                            <div class="col-span-3 md:col-span-1"><img src="./img/after.png" class="rounded-lg"></div>
+                            <div class="col-span-6 md:col-span-3"><img src="./img/text_foto.png" class="rounded-lg"></div>
                         </div>
+                        <button class="xl:hidden flex items-center justify-center gap-3 w-full mt-4 py-3 md:py-[9px] border border-green-bg rounded-lg text-green-bg"><img src="./img/Vector (Stroke).svg">Полезно</button>
                     </div>
-                    <div class="col-span-6 bg-white p-10 rounded-3xl">
-                        <div class="flex justify-between">
-                            <h4 class="text-h4 text-title">Ольга</h4>
-                            <button class="flex items-center gap-3 px-2.5 xl:px-4 py-[9px] border border-green-bg rounded-lg text-green-bg"><img src="./img/Vector (Stroke).svg"><span class="hidden md:flex">Полезно</span></button>
+                    <div class="col-span-12 sm:col-span-6 bg-white p-6 md:p-10 rounded-3xl h-min">
+                        <div class="flex justify-between items-end">
+                            <h4 class="text-p1-M-sm md:text-h4 text-title">Ольга</h4>
+                            <button class="hidden xl:flex items-center gap-3 px-2.5 xl:px-4 py-[9px] border border-green-bg rounded-lg text-green-bg"><img src="./img/Vector (Stroke).svg">Полезно</button>
                         </div>
-                        <div class="text-p3-R text-blue">А вот и сегодняшний результат, Мальчик 12-ти лет перенёс 3 операции на сердце (03.09.2013г,24.10.2017г, 05.07.2021). Последняя операция прошла с осложнением и дважды произведена пункция плевральной полости и эвакуацией секрета в объёме 500мл. 
+                        <div class="text-p3-R text-blue mt-3 md:mt-4">А вот и сегодняшний результат, Мальчик 12-ти лет перенёс 3 операции на сердце (03.09.2013г,24.10.2017г, 05.07.2021). Последняя операция прошла с осложнением и дважды произведена пункция плевральной полости и эвакуацией секрета в объёме 500мл. 
                             06.08.2021. При ЭКГ сердца определяется окрашенный выпот в правой плевральной полости 300–400мл. Состояние п/оперативного лечения субаортального стеноза. Состояние после оперативного лечения ВПС, после протезирования МК (митрального клапана), ушивание косого канала, иссечение субаортальной мембраны. 
                             08.08.2021г. Ребёнок начал принимать Антипаразит, Аурум, Kidney(Почки), Liver(Печень) по 2 кап 2 раза в день и Zeol 1 капс 3 раза в день, Пошёл мощный мочегонный эффект, хотя до этого пациент принимал верошпирон и триампур почти месяц после операции. 
                             09.08.2021г после обеда было сделано контрольное обследование и результат — выпот менее 150 мл, и отказ от пункции плевральной полости. </div>
+                            <button class="xl:hidden flex items-center justify-center gap-3 w-full mt-4 py-3 md:py-[9px] border border-green-bg rounded-lg text-green-bg"><img src="./img/Vector (Stroke).svg">Полезно</button>
                     </div>
                 </div>
             </div>
          </section>
-         <section class="pl-4 pr-0 sm:pl-8 md:pl-12 lg:pl-16 xl:pl-[4.5rem] 2xl:pl-24 my-14 lg:my-[120px]">    <!--3 foto-->       
-            <div class="grid grid-cols-12 mt-[75px] md:mt-14">
+         <section class="pl-4 pr-0 sm:pl-8 md:pl-12 lg:pl-16 xl:pl-[4.5rem] 2xl:pl-24">    <!--3 foto-->       
+            <div class="grid grid-cols-12 mb-14 md:mb-[120px] mt-0 md:mt-14">
                 <div class="col-span-12 lg:col-span-4 2xl:col-span-3 pr-8">  
-                    <h2 class="text-h2-sm md:text-h2 text-title mb-3 md:mb-6">С этим товаром покупают</h2>
+                    <h2 class="text-h2-sm lg:text-h2 text-title mb-0 md:mb-6">С этим товаром покупают</h2>
                 </div>
                 <div class="col-span-12 lg:col-span-8 2xl:col-span-9"> 
                     <div class="grid grid-cols-12 gap-6 md:gap-8 grid-flow-col overflow-auto">
@@ -219,7 +222,7 @@
                 </div>
             </div>
             </section>
-            <section class="bg-green-bg px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[4.5rem] 2xl:px-24 pt-[58px] lg:pt-[99px]">
+            <section class="bg-green-bg px-4 sm:px-8 md:px-12 lg:px-16 xl:px-[4.5rem] 2xl:px-24 pt-14 lg:pt-[99px]">
                 <div class="grid grid-cols-12">
                     <div class="col-span-12 md:col-span-4">
                         <h2 class="text-h2-sm lg:text-h2 text-white mb-4 lg:mb-6">Не знаете что выбрать?</h2>

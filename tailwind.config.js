@@ -37,6 +37,9 @@ module.exports = {
       'p1-M': ['1.5rem', {   //24px
         lineHeight: '1.8rem',   //120%
       }],
+      'p1-M-sm': ['1.5rem', {   //24px
+        lineHeight: '1.65rem',   //110%
+      }],
       'p2-M': ['1.25rem', {   //20px
         lineHeight: '1.5rem',  //120%
       }],
@@ -51,6 +54,9 @@ module.exports = {
       }],
       'p4-M': ['0.875rem', {   //14px
         lineHeight: '1.7875rem', //90%
+      }],
+      'p4-M-sm': ['0.75rem', {   //12px
+        lineHeight: '1.75rem', //100%
       }],
       // fontFamily:'Futura PT Book',
       'p1-R': ['1.5rem', {   //24px
